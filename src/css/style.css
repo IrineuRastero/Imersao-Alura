@@ -15,6 +15,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    margin-top: 262px;
+    margin-bottom: 63px;
 }
 
 
@@ -24,6 +30,10 @@ p {
 
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #4b38287e;
     margin: 0px 0 40px 0;
     padding: 40px 10px 10px 10px;
@@ -98,6 +108,10 @@ footer {
     background-color: #4b3828d5;
     margin-top: 20px;
     padding: 20px 20px 20px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .btntext {
