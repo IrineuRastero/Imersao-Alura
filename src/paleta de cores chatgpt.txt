@@ -1,0 +1,42 @@
+Paleta de Cores
+
+Cor Primária: Azul Claro
+Hex: #4A90E2
+RGB: 74, 144, 226
+
+Cor Secundária: Verde Menta
+Hex: #50E3C2
+RGB: 80, 227, 194
+
+Cor de Destaque: Laranja
+Hex: #F5A623
+RGB: 245, 166, 35
+
+Cor Neutra Clara: Cinza Claro
+Hex: #F5F5F5
+RGB: 245, 245, 245
+
+Cor Neutra Escura: Cinza Médio
+Hex: #9B9B9B
+RGB: 155, 155, 155
+
+Cor de Texto Principal: Preto
+Hex: #333333
+RGB: 51, 51, 51
+
+Exemplo de Aplicação
+
+Fundo do Site: #F5F5F5 (Cinza Claro)
+Cabeçalhos e Destaques: #4A90E2 (Azul Claro)
+Botões e Chamadas à Ação: #50E3C2 (Verde Menta)
+Destaques Importantes: #F5A623 (Laranja)
+Texto Principal: #333333 (Preto)
+Textos Secundários e Complementares: #9B9B9B (Cinza Médio)
+
+Como Usar
+
+Cor Primária: Use para elementos importantes, como o cabeçalho, links principais e o fundo de botões.
+Cor Secundária: Use para elementos que devem complementar a cor primária, como botões secundários ou áreas destacadas.
+Cor de Destaque: Utilize para chamadas à ação, ícones importantes ou seções que você deseja destacar.
+Cores Neutras: Use para fundos, seções de conteúdo e textos secundários, para garantir uma leitura fácil e uma aparência limpa.
+Essa paleta proporciona um visual moderno e fresco, mantendo um equilíbrio entre cores vibrantes e neutras. Claro, você pode ajustar as cores de acordo com a identidade e o estilo do seu site!

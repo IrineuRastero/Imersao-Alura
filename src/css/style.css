@@ -1,0 +1,112 @@
+@font-face {
+    font-family: B Chancery;
+    src: url(/src/fonts/BLKCHCRY.TTF);
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url(/src/fonts/EBGaramond-Regular.ttf);
+}
+
+body {
+    background-color: #ddc7a1;
+    text-align: center;
+    font-family: Garamond, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+header {
+    background-color: #4b38287e;
+    margin: 0px 0 40px 0;
+    padding: 40px 10px 10px 10px;
+    border-radius: 0 0 2px 2px;
+}
+
+h1 {
+    font-family: B Chancery;
+    margin: 15px 0 0px 0;
+    color: #800000;
+    font-size: 50px;
+}
+
+.pesquisar {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 30px;
+
+}
+
+input {
+    font-family: Garamond;
+    font-size: 15px;
+    height: 35px;
+    width: 70vw;
+    border-radius: 20px;
+    border: solid 2px #4B3828;
+    text-align: center;
+}
+
+placeholder {
+    text-align: center;
+}
+
+button {
+    background-color: #4B3828;
+    margin-left: 10px;
+    height: 32px;
+    width: 33px;
+    border-radius: 20px;
+    border: solid 2px #4B3828;
+    cursor: pointer;
+    background-image: url(/src/imagens/pngtree-magnifying-glass-icon-png-image_4419957.jpg);
+    overflow: auto;
+    background-size: contain;
+}
+
+.item-resultado {
+    background-color: #e2d6c1;
+    margin: 10px 20px 0px 20px;
+    text-align: start;
+    padding: 15px 35px;
+    border-radius: 80px;
+    border: solid 1px #4B3828;
+    min-width: 280px;
+}
+.item-resultado a{
+    display: flex;
+    max-width: fit-content;
+}
+
+h2 {
+    color: #d16a03;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    font-family: B Chancery;
+}
+
+footer {
+    border-radius: 2px 2px 0 0;
+    background-color: #4b3828d5;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.btntext {
+    color: #fc8106;
+    text-decoration: underline;
+    font-family: B Chancery;    
+}
+
+h2 {
+    max-width: fit-content;
+    padding: 0;
+}
