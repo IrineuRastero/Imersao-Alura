@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Alura</title>
-    <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 </head>
 
 <body>
@@ -14,7 +15,11 @@
         <h1>Aberturas de Xadrez</h1>
         <div class="pesquisar">
             <input type=" text" placeholder="Pesquise uma abertura">
-            <Button></Button>
+            <Button class="botao-pesquisa"></Button>
+        </div>
+        <div class="container">
+            <button class="botao-brancas">Brancas</button>
+            <button class="botao-pretas">Pretas</button>
         </div>
     </header>
 
@@ -31,9 +36,9 @@
             </div>
 
             <div class="item-resultado">
-                <a href="http://www.youtube.com/watch?v=H5TA2IwkDrk" target="_blank">
-                    <h2>Defesa Siciliana</h2>
-                </a>
+                <h2>Defesa Siciliana</h2>
+                <iframe src="http://www.youtube.com/embed/H5TA2IwkDrk" frameborder="0" allowfullscreen></iframe>
+                    
                 <p>A Defesa Siciliana (1.e4 c5) é uma abertura muito popular entre as Pretas, especialmente entre
                     jogadores que preferem um jogo posicional. Ela oferece muitas variações e possibilidades táticas.
                 </p>
@@ -82,12 +87,14 @@
 
 </body>
 
-</html>
+
 </section>
 
 </main>
 <footer>
-    <a href="https://www.chess.com/pt-BR" target="_blank" class="btntext">Pratique o seus novos conhecimentos.</a>
+    <div class="chess-link">
+        <a href="https://www.chess.com/pt-BR" target="_blank" class="btntext">Pratique os seus novos conhecimentos.</a>
+    </div>
 </footer>
 
 <script src="/JS/dados.js"></script>
