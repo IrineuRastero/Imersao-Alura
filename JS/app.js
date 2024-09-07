@@ -37,14 +37,21 @@ function pesquisar() {
 
   //seleciona a barra de busca  
   let campoPesquisa = document.getElementById("campo-pesquisa").value;
-
+  
+  //Não retorna nada se a barra de busca estiver vazia
+  if (campoPesquisa == "") {
+    dadosBrancas.innerHTML = ` <p>Nada foi encontrado tente pesquisar a palavra "abertura" ou o nome de alguma peça</p>`
+    dadosPretas.innerHTML = ` <p>Nada foi encontrado tente pesquisar a palavra "abertura" ou o nome de alguma peça</p>`
+    return
+  }
 
   // Itera sobre cada dado da lista de brancas
   for (let dado of Brancas) {
 
     //Condicional para aparecer os resultados baseados na pesquisa, buscando tanto no nome quanto na descrição
     if (dado.nome.toLowerCase().includes(campoPesquisa.toLowerCase()) ||
-      dado.descricaoCurta.toLowerCase().includes(campoPesquisa.toLowerCase())) {
+      dado.descricaoCurta.toLowerCase().includes(campoPesquisa.toLowerCase()) ||
+      dado.pecas.toLowerCase().includes(campoPesquisa.toLowerCase())) {
 
       // Cria uma div para cada dado e adiciona as informações
       listaBrancas += `
@@ -62,7 +69,8 @@ function pesquisar() {
 
     //Condicional para aparecer os resultados baseados na pesquisa, buscando tanto no nome quanto na descrição
     if (info.abertura.toLowerCase().includes(campoPesquisa.toLowerCase()) ||
-      info.descricao.toLowerCase().includes(campoPesquisa.toLowerCase())) {
+      info.descricao.toLowerCase().includes(campoPesquisa.toLowerCase()) ||
+      info.peca.toLowerCase().includes(campoPesquisa.toLowerCase())) {
 
       // Cria uma div para cada dado e adiciona as informações
       listaPretas += `
@@ -75,7 +83,13 @@ function pesquisar() {
     }
   }
 
+
   // Atualiza o conteúdo das divs com os dados gerados
   dadosBrancas.innerHTML = listaBrancas;
   dadosPretas.innerHTML = listaPretas;
+  if(!listaBrancas) {
+    dadosBrancas.innerHTML = `<p>Nada foi encontrado</p>`}
+
+  if(!listaPretas) {
+    dadosPretas.innerHTML = `<p>Nada foi encontrado</p>`}
 }
