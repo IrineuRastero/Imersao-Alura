@@ -93,13 +93,15 @@ placeholder {
     display: flex;
     height: 46px;
     width: 120px;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     border-radius: 23px 0 0 23px;
     align-content: center;
     justify-content: center;
     border: solid 0.5px #4B3828;
     border-right: transparent;
     cursor: pointer;
+    font-family: Garamond;
+    font-size: 16px;
 }
 
 .botao-pretas {
@@ -107,12 +109,14 @@ placeholder {
     display: flex;
     height: 46px;
     width: 120px;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     border-radius: 0 23px 23px 0;
     align-content: center;
     justify-content: center;
     border: solid 0.5px #4B3828;
     cursor: pointer;
+   font-family: Garamond;
+   font-size: 16px;
    
 }
 

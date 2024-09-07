@@ -19,7 +19,7 @@ let Brancas = [
 let Pretas = [
   {
       abertura: "Defesa Siciliana",
-      descricao: "Uma abertura muito popular e agressiva, caracterizada pela resposta 1...c5 ao 1.e4 das brancas.",
+      descricao: "Uma abertura muito popular e agressiva, caracterizada pela resposta 1.c5 ao 1.e4 das brancas.",
       link: "https://www.youtube.com/embed/H5TA2IwkDrk"
   },
   {
