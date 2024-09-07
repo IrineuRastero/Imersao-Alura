@@ -5,86 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Alura</title>
-    <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 </head>
 
 <body>
     <header>
         <h1>Aberturas de Xadrez</h1>
-       <div class="pesquisar"> 
-        <input type=" text" placeholder="Pesquise uma abertura">
-        <Button></Button>
-       </div>
+        <div class="pesquisar">
+            <input type=" text" placeholder="Pesquise uma abertura">
+            <Button class="botao-pesquisa"></Button>
+        </div>
+        <div class="container">
+            <button class="botao-brancas ativado" id="branco">Brancas</button>
+            <button class="botao-pretas" id="preto">Pretas</button>
+        </div>
     </header>
 
     <main>
 
-        <section class="caixa-resultados" id="caixa-resultados">
-            <div class="item-resultado">
-                <a href="https://www.xadrezforte.com.br/abertura-italiana-o-guia-completo-para-iniciantes/"
-                    target="_blank">
-                    <h2>Abertura Italiana</h2>
-                </a>
-                <p>A Abertura Italiana (1.e4 e5 2.Cf3 Cc6 3.Bc4) é uma das mais antigas e populares aberturas. Ela
-                    oferece às Brancas um centro sólido e um bom desenvolvimento de peças.</p>
-            </div>
+        <section class="inativa" id="resultados-pretas">
+        </section>
 
-            <div class="item-resultado">
-                <a href="http://www.youtube.com/watch?v=H5TA2IwkDrk" target="_blank">
-                    <h2>Defesa Siciliana</h2>
-                </a>
-                <p>A Defesa Siciliana (1.e4 c5) é uma abertura muito popular entre as Pretas, especialmente entre jogadores que preferem um jogo posicional. Ela oferece muitas variações e possibilidades táticas.</p>
-            </div>
+        <section id="resultados-brancas">
+        </section>
 
-            <div class="item-resultado">
-                <a href="http://www.youtube.com/watch?v=TyWJJro6Vw8" target="_blank">
-                    <h2>Ruy López</h2>
-                </a>
-                <p>O Ruy López (1.e4 e5 2.Cf3 Cc6 3.Bb5) é outra abertura clássica e sólida. Ela oferece às Brancas um bom controle do centro e oportunidades para um jogo ativo.</p>
-            </div>
+    </main>
+    <footer>
+        <div class="chess-link">
+            <a href="https://www.chess.com/pt-BR" target="_blank" class="btntext">Pratique os seus novos
+                conhecimentos.</a>
+        </div>
+    </footer>
 
-           
-            <div class="item-resultado">
-                <a href="http://www.youtube.com/watch?v=eD_VC_Ic5qk" target="_blank">
-                    <h2>Defesa Francesa</h2>
-                </a>
-                <p>A Defesa Francesa (1.e4 e6 2.d4 d5) é uma abertura sólida e posicional. Ela oferece às Pretas um centro compacto e boas chances de contra-ataque.</p>
-            </div>
-
-            <div class="item-resultado">
-                <a href="http://www.youtube.com/watch?v=oKv4T1EinGA" target="_blank">
-                    <h2>Gambito da Dama</h2>
-                </a>
-                <p>O Gambito da Dama (1.d4 d5 2.c4) é uma abertura muito aguda, com muitas variações e possibilidades táticas. As Brancas sacrificam um peão para obter um centro forte e um jogo ativo.</p>
-            </div>
-
-            <div class="item-resultado">
-                <a href="https://www.chess.com/pt-BR/article/view/aprenda-a-jogar-a-defesa-caro-kann" target="_blank">
-                    <h2>Defesa Caro-Kann</h2>
-                </a>
-                <p>A Defesa Caro-Kann (1.e4 c6) é uma abertura sólida e flexível. Ela oferece às Pretas um centro compacto e boas chances de contra-ataque.</p>
-            </div>
-
-            <div class="item-resultado">
-                <a href="https://www.youtube.com/watch?v=WRXdz1MkVRs" target="_blank">
-                    <h2>Defesa Alekhine</h2>
-                </a>
-                <p>A Defesa Alekhine (1.e4 Nf6 2.e5 Nd5) é uma abertura aguda e ambiciosa. Ela oferece às Pretas chances de complicar a posição e surpreender o adversário.</p>
-            </div>
-
-</body>
-
-</html>
-</section>
-
-</main>
-<footer>
-    <a href="https://www.chess.com/pt-BR" target="_blank" class="btntext">Pratique o seus novos conhecimentos.</a>
-</footer>
-
-<script src="/JS/dados.js"></script>
-<script src="/JS/app.js"></script>
+    <script src="./JS/dados.js"></script>
+    <script src="./JS/app.js"></script>
 
 </body>
 

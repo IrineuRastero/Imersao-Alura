@@ -1,16 +1,51 @@
 //console.log(aberturas)
+const botaoBranco = document.getElementById("branco")
+const botaoPreto = document.getElementById("preto")
 
-let section = document.getElementById("caixa-resultados")
+
+botaoBranco.addEventListener("click", () => {
+    botaoPreto.classList.remove("ativado");
+    botaoBranco.classList.add("ativado");
+    dadosPretas.classList.add("inativa");
+    dadosBrancas.classList.remove("inativa");
+});
+
+botaoPreto.addEventListener("click", () => {
+    botaoBranco.classList.remove("ativado");
+    botaoPreto.classList.add("ativado");
+    dadosBrancas.classList.add("inativa");
+    dadosPretas.classList.remove("inativa");
+
+});
 
 
-for (let dado of aberturas){
+let dadosBrancas = document.getElementById("resultados-brancas")
 
-section.innerHTML += `
-    <div class="item-resultado">
-                <a href="${dado.link}" target="_blank">
-                    <h2>${dado.nome}</h2>
-                </a>
-                <p>${dado.descricao}</p>
-    </div>
-`
+for (let dado of Brancas) {
+
+    dadosBrancas.innerHTML += `
+
+     <div class="item">
+                     <h2>${dado.nome}</h2>
+    
+                     <iframe src="${dado.linkYoutube}" frameborder="0" allowfullscreen></iframe>
+                    
+                     <p>${dado.descricaoCurta}</p>
+                 </div>
+     `;
 }
+let dadosPretas = document.getElementById("resultados-pretas")
+
+ for (let info of Pretas) {
+
+     dadosPretas.innerHTML += `
+
+     <div class="item">
+                      <h2>${info.abertura}</h2>
+    
+                      <iframe src="${info.link}" frameborder="0" allowfullscreen></iframe>
+                    
+                      <p>${info.descricao}</p>
+                  </div>
+ `;
+ }

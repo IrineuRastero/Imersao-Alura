@@ -1,0 +1,16 @@
+@media (max-width: 620px) {
+
+    iframe{
+        height: 189px;
+        width: 336px;
+    }
+    
+}
+
+@media (max-width: 447px){
+
+    main{
+        margin-top: 385px;
+    }
+}
+
