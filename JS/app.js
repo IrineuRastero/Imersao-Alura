@@ -26,11 +26,11 @@ for (let dado of Brancas) {
     dadosBrancas.innerHTML += `
 
      <div class="item">
-                     <h2>${Brancas.nome}</h2>
+                     <h2>${dado.nome}</h2>
     
-                     <iframe src="${Brancas.linkYoutube}" frameborder="0" allowfullscreen></iframe>
+                     <iframe src="${dado.linkYoutube}" frameborder="0" allowfullscreen></iframe>
                     
-                     <p>${Brancas.descricaoCurta}</p>
+                     <p>${dado.descricaoCurta}</p>
                  </div>
      `;
 }
@@ -41,11 +41,11 @@ let dadosPretas = document.getElementById("resultados-pretas")
      dadosPretas.innerHTML += `
 
      <div class="item">
-                      <h2>${Pretas.abertura}</h2>
+                      <h2>${info.abertura}</h2>
     
-                      <iframe src="${Pretas.link}" frameborder="0" allowfullscreen></iframe>
+                      <iframe src="${info.link}" frameborder="0" allowfullscreen></iframe>
                     
-                      <p>${Pretas.descricao}</p>
+                      <p>${info.descricao}</p>
                   </div>
  `;
  }
