@@ -1,6 +1,8 @@
 //console.log(aberturas)
 const botaoBranco = document.getElementById("branco")
 const botaoPreto = document.getElementById("preto")
+let dadosBrancas = document.getElementById("resultados-brancas")
+let dadosPretas = document.getElementById("resultados-pretas")
 
 
 botaoBranco.addEventListener("click", () => {
@@ -15,15 +17,17 @@ botaoPreto.addEventListener("click", () => {
     botaoPreto.classList.add("ativado");
     dadosBrancas.classList.add("inativa");
     dadosPretas.classList.remove("inativa");
-
 });
 
 
-let dadosBrancas = document.getElementById("resultados-brancas")
+function pesquisar(){
+
+let listaBrancas =""
+let listaPretas =""
 
 for (let dado of Brancas) {
 
-    dadosBrancas.innerHTML += `
+     listaBrancas += `
 
      <div class="item">
                      <h2>${dado.nome}</h2>
@@ -34,11 +38,11 @@ for (let dado of Brancas) {
                  </div>
      `;
 }
-let dadosPretas = document.getElementById("resultados-pretas")
+
 
  for (let info of Pretas) {
 
-     dadosPretas.innerHTML += `
+     listaPretas += `
 
      <div class="item">
                       <h2>${info.abertura}</h2>
@@ -49,3 +53,10 @@ let dadosPretas = document.getElementById("resultados-pretas")
                   </div>
  `;
  }
+
+
+ 
+ dadosBrancas.innerHTML = listaBrancas
+
+ dadosPretas.innerHTML = listaPretas
+}
