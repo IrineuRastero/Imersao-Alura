@@ -1,4 +1,4 @@
-const Brancas = [
+let Brancas = [
   {
       nome: "Abertura Italiana",
       descricaoCurta: "Uma das aberturas mais populares, caracterizada pelo rápido desenvolvimento dos bispos e o controle do centro.",
@@ -16,7 +16,7 @@ const Brancas = [
   }
 ];
 
-const Pretas = [
+let Pretas = [
   {
       abertura: "Defesa Siciliana",
       descricao: "Uma abertura muito popular e agressiva, caracterizada pela resposta 1...c5 ao 1.e4 das brancas.",
