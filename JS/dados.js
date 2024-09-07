@@ -1,52 +1,35 @@
-const aberturas = [
-    {
+const Brancas = [
+  {
+      nome: "Abertura Italiana",
+      descricaoCurta: "Uma das aberturas mais populares, caracterizada pelo rápido desenvolvimento dos bispos e o controle do centro.",
+      linkYoutube: "http://www.youtube.com/embed/dv9h6klKCLE"
+  },
+  {
       nome: "Ruy Lopez",
-      descrição: "Uma das aberturas mais populares, caracterizada pelo movimento inicial e4 e e5, seguido de Cf3 e Cc6.",
-      cor: "brancas"
-    },
-    {
-      nome: "Gambito da Dama",
-      descrição: "Abertura agressiva em que as brancas sacrificam um peão para obter um rápido desenvolvimento e controle do centro do tabuleiro.",
-      cor: "brancas"
-    },
-    {
-      nome: "Defesa Francesa",
-      descrição: "Abertura sólida e posicional, caracterizada pelos movimentos iniciais e4 e e6.",
-      cor: "brancas"
-    },
-    {
-      nome: "Siciliana",
-      descrição: "Uma das aberturas mais versáteis e populares, com muitas variações, iniciada com e4 e c5.",
-      cor: "brancas"
-    },
-    {
-      nome: "Defesa Caro-Kann",
-      descrição: "Abertura sólida e posicional, similar à Defesa Francesa, mas com o movimento inicial c6 em vez de e6.",
-      cor: "brancas"
-    },
-    {
-        nome: "Gambito do Rei",
-        descrição: "Abertura agressiva em que as brancas sacrificam um peão para obter rápido desenvolvimento e controle do centro, similar ao Gambito da Dama, mas com um plano estratégico diferente.",
-        cor: "brancas"
-      },
-      {
-        nome: "Defesa Alekhine",
-        descrição: "Abertura sólida e posicional, caracterizada pelo movimento inicial e4 e Nf6, seguida de e5.",
-        cor: "pretas"
-      },
-      {
-        nome: "Abertura Inglesa",
-        descrição: "Abertura sólida e posicional, caracterizada pelos movimentos iniciais c4 e c5.",
-        cor: "brancas"
-      },
-      {
-        nome: "Defesa Escandinava",
-        descrição: "Abertura sólida e posicional, caracterizada pelos movimentos iniciais e4 e d5.",
-        cor: "pretas"
-      },
-      {
-        nome: "Abertura Escocesa",
-        descrição: "Abertura flexível e versátil, caracterizada pelos movimentos iniciais e4 e e5, seguida de Cf3 e Nc6.",
-        cor: "brancas"
-      }
-  ];
+      descricaoCurta: "Uma abertura clássica que envolve um ataque ao cavalo do oponente.",
+      linkYoutube: "http://www.youtube.com/embed/TyWJJro6Vw8"
+  },
+  {
+      nome: "Gambito do Rei",
+      descricaoCurta: "Uma abertura agressiva onde as brancas sacrificam um peão para ganhar espaço e iniciativa.",
+      linkYoutube: "http://www.youtube.com/embed/3xqw1J_Rc-A"
+  }
+];
+
+const Pretas = [
+  {
+      abertura: "Defesa Siciliana",
+      descricao: "Uma abertura muito popular e agressiva, caracterizada pela resposta 1...c5 ao 1.e4 das brancas.",
+      link: "http://www.youtube.com/embed/H5TA2IwkDrk"
+  },
+  {
+      abertura: "Defesa Francesa",
+      descricao: "Uma abertura sólida e posicional, que busca igualdade e contra-ataques.",
+      link: "http://www.youtube.com/embed/bkxUhOjYexM"
+  },
+  {
+      abertura: "Defesa Caro-Kann",
+      descricao: "Uma abertura sólida e flexível, que oferece diversas opções estratégicas.",
+      link: "http://www.youtube.com/embed/WYT90WbN_6U"
+  }
+];

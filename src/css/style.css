@@ -18,8 +18,8 @@ body {
     min-height: 100vh;
 }
 
-main{
-    margin-top: 300px;
+main {
+    margin-top: 320px;
 }
 
 
@@ -51,7 +51,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 35px;
-    padding: 30px;
+    padding: 25px;
 
 }
 
@@ -82,7 +82,50 @@ placeholder {
     background-size: contain;
 }
 
-.item-resultado {
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.botao-brancas {
+    color: #d16a03;
+    display: flex;
+    height: 46px;
+    width: 120px;
+    padding: 1rem;
+    border-radius: 23px 0 0 23px;
+    align-content: center;
+    justify-content: center;
+    border: solid 0.5px #4B3828;
+    border-right: transparent;
+    cursor: pointer;
+}
+
+.botao-pretas {
+    color: #d16a03;
+    display: flex;
+    height: 46px;
+    width: 120px;
+    padding: 1rem;
+    border-radius: 0 23px 23px 0;
+    align-content: center;
+    justify-content: center;
+    border: solid 0.5px #4B3828;
+    cursor: pointer;
+   
+}
+
+.ativado{
+    background-color: #4B3828;
+}
+
+.inativa{
+    display: none;
+
+}
+
+.item {
     background-color: #e2d6c1;
     margin: 10px 20px 0px 20px;
     display: flex;
@@ -94,11 +137,12 @@ placeholder {
     min-width: 280px;
 }
 
-iframe{
+
+iframe {
     height: 17rem;
     width: 30rem;
     align-self: center;
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 5px 1rem 2rem 1rem;
 }
 
 h2 {
@@ -114,16 +158,16 @@ footer {
     padding: 20px 20px 20px 20px;
 }
 
-.chess-link{
+.chess-link {
     display: inline-table;
     padding: 15px;
     border-radius: 15rem;
     border: solid 1px #4B3828;
     background-color: #e2d6c1;
 }
+
 .btntext {
     color: #800000;
     text-decoration: underline;
-    font-family: B Chancery;    
+    font-family: B Chancery;
 }
-
